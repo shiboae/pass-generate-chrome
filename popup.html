@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multifunctional Extension</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="time-container">
+      <div class="time" id="currentTime"></div>
+      <div class="date" id="currentDate"></div>
+      <div class="greeting" id="greeting"></div>
+    </div>
+    <div class="password-generator">
+      <h2>Pass Generate!</h2>
+      <button id="generatePassword">Generate Password</button>
+      <input type="range" id="passwordLengthSlider" min="6" max="24" step="1" value="12">
+      <div id="passwordLengthDisplay">12</div>
+      <div id="passwordDisplay"></div>
+      <button id="copyToClipboard">Copy to Clipboard</button>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 Shibo.</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

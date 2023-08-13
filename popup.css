@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    width: 300px;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .container {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #000; /* Set background color to black */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .time-container {
+    text-align: center;
+    margin-bottom: 20px;
+    perspective: 600px; /* Set the perspective for 3D effect */
+  }
+  
+  .time {
+    font-size: 24px;
+    font-weight: bold;
+    animation: blink 1s ease-in-out infinite; /* Add the blink animation */
+    transform-style: preserve-3d;
+  }
+  
+  .date {
+    font-size: 14px;
+    margin-top: 5px;
+    transform-style: preserve-3d;
+    opacity: 0.7; /* Reduce opacity for depth effect */
+  }
+  
+  .greeting {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 10px;
+    transform-style: preserve-3d;
+    opacity: 0.7;
+    position: relative;
+  }
+
+  .greeting::after {
+    content: "";
+    display: block;
+    width: 60%; /* Adjust the width as needed */
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5px; /* Position the line just below the greeting */
+    left: 20%; /* Adjust the left position as needed */
+    opacity: 0.5; /* Adjust the opacity as needed */
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .password-generator {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #generatePassword {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+  
+  #generatePassword:hover {
+    background-color: #2980b9;
+  }
+  
+  #passwordDisplay {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  #passwordLengthSlider {
+    width: 80%;
+    margin: 10px auto;
+  }
+  
+  #passwordLengthDisplay {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  #copyToClipboard {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  #copyToClipboard:hover {
+    background-color: #219e54;
+  }
+
+  .password-generator h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    opacity: 80%;
+  }
+
+  .password-generator h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60%;
+    left: 20%;
+    right: 0;
+    bottom: -5px; /* Adjust as needed to position the line closer to the text */
+    height: 2px;
+    background-color: #ccc; /* Line color */
+    opacity: 0.5;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 60%;
+  }
+
+  input[type="text"] {
+    width: 70%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Input background color */
+    border: none;
+    color: #fff; /* Input text color */
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Background image */
+  .container {
+    background-image: url('images/background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  
